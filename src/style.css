@@ -1,0 +1,36 @@
+body{
+    background: url(./pexels-dominika-roseclay-1982485.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+#content{
+    color: green;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    justify-items: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.logo > img{
+    width: 100px;
+    height: 100px;
+}
+
+.shopName{
+    font-size: 3rem;
+}
+
+.containerBtn{
+    justify-self: end;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+}
+
+.containerBtn > div{
+    padding: 0.3em;
+}
+
+
+
