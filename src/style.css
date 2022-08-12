@@ -1,15 +1,38 @@
+@font-face {
+    font-family: 'SignatureFont';
+    src: url('./Three-Signature.ttf') format('ttf'),
+    url('./Three-Signature.otf') format('otf');
+    font-weight: 600; 
+    font-style: normal; 
+} 
+
+*{
+    box-sizing: border-box;
+}
+
 body{
     background: url(./pexels-dominika-roseclay-1982485.jpg) no-repeat center center fixed;
     background-size: cover;
+    margin: 0;
 }
 
 #content{
-    color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#contentHeader{
     display: grid;
     grid-template-columns: 0.5fr 1fr 0.5fr;
     justify-items: center;
     align-items: center;
     padding: 1em;
+    width: 100%;
+    height: 100%;
+    background-color: blanchedalmond;
 }
 
 .logo > img{
@@ -19,6 +42,7 @@ body{
 
 .shopName{
     font-size: 3rem;
+    font-family:SignatureFont, Arial, Helvetica, sans-serif;
 }
 
 .containerBtn{
@@ -32,5 +56,27 @@ body{
     padding: 0.3em;
 }
 
+#contentMain{
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
 
+#contentMain > h1{
+    font-size: 5rem;
+    margin: 0;
+    padding: 20px;
+}
 
+#contentMain > img{
+    width: 500px;
+    height: 500px;
+    align-self: center;
+    object-fit: cover;
+}
+
+#contentMain > p{
+    align-self: center;
+}
