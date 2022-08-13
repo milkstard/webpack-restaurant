@@ -10,11 +10,13 @@ const contentMain = document.createElement('div');
 contentHeader.id = "contentHeader";
 contentMain.id = "contentMain";
 const body = document.querySelector('body');
+const footer = document.createElement('footer');
+
 body.appendChild(content);
-content.append(contentHeader, contentMain);
+content.append(contentHeader, contentMain, footer);
 // body.append(contentHeader);
 // contentHeader.appendChild(content);
-
+footer.textContent = "-- All rights reserved © --"
 const logo = document.createElement('div');
 const shopName = document.createElement('div');
 const containerBtn = document.createElement('div');
