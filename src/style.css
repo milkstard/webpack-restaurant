@@ -2,7 +2,6 @@
     font-family: 'SignatureFont';
     src: url('./Three-Signature.ttf'),
     url('./Three-Signature.otf');
-    font-weight: 600; 
     font-style: normal; 
 } 
 
@@ -41,8 +40,10 @@ body{
 }
 
 .shopName{
-    font-size: 3rem;
+    font-size: 5rem;
+    font-weight: bolder;
     font-family: 'SignatureFont', Arial, Helvetica, sans-serif;
+    color: rgb(211, 92, 147);
 }
 
 .containerBtn{
