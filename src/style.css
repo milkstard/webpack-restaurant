@@ -5,6 +5,12 @@
     font-style: normal; 
 } 
 
+@font-face {
+    font-family: 'Hallies';
+    src: url('./Hallies.otf'),
+    url('./Hallies.ttf');
+    font-style: normal;
+}
 *{
     box-sizing: border-box;
 }
