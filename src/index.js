@@ -55,7 +55,7 @@ containerBtn.append(homeBtnD, menuBtnD, contactBtnD);
 const homeH = document.createElement("h1");
 const homeP = document.createElement("p");
 
-homeH.textContent = "The Donut Shop ..."
+homeH.textContent = "THE #1 DONUTS IN THE WORLD"
 homeP.textContent = "The worlds leading donut shop. With high quality of bread and world class pastry chef.";
 
 contentMain.append(homeH, imgContentMain, homeP);
