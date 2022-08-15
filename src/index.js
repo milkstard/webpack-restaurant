@@ -14,8 +14,7 @@ const footer = document.createElement('footer');
 
 body.appendChild(content);
 content.append(contentHeader, contentMain, footer);
-// body.append(contentHeader);
-// contentHeader.appendChild(content);
+
 footer.textContent = "-- All rights reserved © --"
 const logo = document.createElement('div');
 const shopName = document.createElement('div');
@@ -47,13 +46,15 @@ const contactBtn = document.createElement("button");
 homeBtn.textContent = "HOME";
 menuBtn.textContent = "MENU";
 contactBtn.textContent = "CONTACT";
+homeBtn.id = "home";
+menuBtn.id = "menu";
+contactBtn.id = "contact";
 homeBtnD.append(homeBtn);
 menuBtnD.append(menuBtn);
 contactBtnD.append(contactBtn);
 
 containerBtn.append(homeBtnD, menuBtnD, contactBtnD);
 
-//const homeTxt = document.createElement("div");
 const homeH = document.createElement("h1");
 const homeP = document.createElement("p");
 
@@ -62,4 +63,7 @@ homeP.textContent = "The worlds leading donut shop. With high quality of bread a
 
 contentMain.append(homeH, imgContentMain, homeP);
 
-//contentMain.appendChild(homeTxt);
+document.addEventListener("click", (event) => {
+    
+    //console.log(event.target.id === 'menu');
+});
