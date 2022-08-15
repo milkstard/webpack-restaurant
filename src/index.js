@@ -1,8 +1,11 @@
 import './style.css';
 import logoSVG from './delicious-donut-with-chocolate.svg';
-import logoContentMain from './woman-donut.jpg'
+import logoContentMain from './woman-donut.jpg';
+import functionMenu from './menu.js';
+
 const content = document.createElement('div');
 content.setAttribute('id','content');
+content.classList.add('active');
 
 const contentHeader = document.createElement('div');
 const contentMain = document.createElement('div');
@@ -63,7 +66,9 @@ homeP.textContent = "The worlds leading donut shop. With high quality of bread a
 
 contentMain.append(homeH, imgContentMain, homeP);
 
-document.addEventListener("click", (event) => {
-    
-    //console.log(event.target.id === 'menu');
-});
+const menuID = document.querySelector('#menu');
+
+menuID.addEventListener("click", ()=>{
+    content.classList.remove('active');
+    content.classList.add('hide');
+    functionMenu()});
