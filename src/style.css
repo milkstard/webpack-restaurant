@@ -22,13 +22,24 @@ body{
     margin: 0;
 }
 
-#content{
+.active{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
+
+.hide{
+    display: none;
+}
+/*#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}*/
 
 #contentHeader{
     display: grid;
@@ -161,4 +172,15 @@ footer{
     text-align: center;
     word-spacing: 5px;
     border-top: 1px solid rgb(110, 87, 87);
+}
+
+#foodGeneral{
+    width: 500px;
+    height: 500px;
+    align-self: center;
+    object-fit: cover;
+    border: 1px solid rgb(177, 78, 190);
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 1px 1px 30px rgb(187, 99, 99);
 }
