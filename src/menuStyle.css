@@ -1,0 +1,31 @@
+#contentMain{
+    align-items: center;
+}
+
+.description{
+    font-family: 'Hallies', Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.foodContainer:hover{
+    box-shadow: 1px 1px 30px rgb(7, 7, 7);
+    opacity: 0.8;
+}
+
+.description > h3{
+    margin: 10px;
+}
+
+#foodGeneral{
+    width: 250px;
+    height: 250px;
+    align-self: center;
+    object-fit: cover;
+    border: 1px solid rgb(177, 78, 190);
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 1px 1px 30px rgb(187, 99, 99);
+}
