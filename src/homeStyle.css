@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Hallies';
+    src: url('./Hallies.otf'),
+    url('./Hallies.ttf');
+    font-style: normal;
+}
+
+#contentMain{
+    flex-direction: column;
+}
+
+#contentMain > h1{
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 10px;
+    text-align: center;
+    text-shadow: 6px 12px 8px #703a3a;
+    color: rgb(107, 55, 55);
+    margin: 0;
+    padding: 20px;
+}
+
+#contentMain > img{
+    width: 500px;
+    height: 500px;
+    align-self: center;
+    object-fit: cover;
+    border: 1px solid rgb(177, 78, 190);
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 1px 1px 30px rgb(187, 99, 99);
+}
+
+#contentMain > p{
+    font-family: 'Hallies',Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    align-self: center;
+}
