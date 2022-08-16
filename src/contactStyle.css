@@ -1,0 +1,10 @@
+.contactMain > h1{
+    text-align: center;
+   
+}
+
+.contactMain > p{
+    text-align: center;
+    color: rgb(16, 19, 16);
+    padding: 1em;
+}
